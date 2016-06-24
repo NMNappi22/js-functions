@@ -257,7 +257,13 @@ function letterGrade(score, totalMaximumPossibleScore){
  * @param {object} restaurant   represents a restaurant object
  * @return {object} restaurant
  */
-
+function incrementReviews(){
+	var restaurant = (){
+		reviews: 1
+	}
+	if()
+	
+}
 
 /**
  * Joins two strings with a space.
