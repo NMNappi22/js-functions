@@ -230,23 +230,23 @@ function isOdd(n){
  * @return {string} the score represented as a letter grade
  */
 function letterGrade(score, totalMaximumPossibleScore){
-	if(score === range(90, 100)){
-		return "A"
+	var percentage = (score / totalMaximumPossibleScore);
+	console.log(percentage);
+	if(0.90 <= percentage && percentage <= 1.0){
+		return 'A'
 	}
-	if(score === range(80, 89)){
-		return "B"
+	if(0.80 <= percentage && percentage < 0.90){
+		return 'B'
 	}
-	if(score === range(70, 79)){
-		return "C"
+	if(0.70 <= percentage && percentage < 0.80){
+		return 'C'
 	}
-	if(score === range(60, 69)){
-		return "D"
+	if(0.60 <= percentage && percentage < 0.70){
+		return 'D'
 	}
-	if(score === range(0, 59)){
-		return "F"
+	if(percentage <= 0.59){
+		return 'F'
 	}
-	score = 90
-	totalMaximumPossibleScore = 100
 }
 
 
