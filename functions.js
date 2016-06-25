@@ -257,12 +257,14 @@ function letterGrade(score, totalMaximumPossibleScore){
  * @param {object} restaurant   represents a restaurant object
  * @return {object} restaurant
  */
-function incrementReviews(){
-	var restaurant = (){
-		reviews: 1
+function incrementReviews(restaurant){
+	if(restaurant.reviews){
+		restaurant.reviews = restaurant.reviews + 1
 	}
-	if()
-	
+	else{
+		restaurant.reviews = 1
+	}
+	return restaurant;
 }
 
 /**
@@ -270,8 +272,10 @@ function incrementReviews(){
  * @param {string} word1
  * @param {string} word2
  * @return {string} joined the words joined with a space
- */
-
+*/
+function combine("word1", "word2"){
+	
+}
 
 /**
  * Returns a circle object with the properties `circumference` and `area`.
